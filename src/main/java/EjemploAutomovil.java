@@ -1,32 +1,30 @@
 public class EjemploAutomovil {
     public static void main(String[] args) {
 
-        Automovil auto = new Automovil();
+        Automovil subaru = new Automovil();
 
-        // definiendo atributos de auto
-        auto.fabricante = "Subaru";
-        auto.modelo = "1999";
-        auto.cilindraje = 2.0;
-        auto.color = "Rojo";
+        // definiendo atributos de auto subaru
+        subaru.fabricante = "Subaru";
+        subaru.modelo = "1999";
+        subaru.cilindraje = 2.0;
+        subaru.color = "Rojo";
 
+        // instanciando objeto mazda
         Automovil mazda = new Automovil();
         mazda.fabricante = "Mazda";
         mazda.modelo = "1995";
         mazda.color = "Azul";
+        mazda.cilindraje = 3.0;
 
-        // imprinir atributos auto
-        System.out.println("auto.fabricante = " + auto.fabricante);
-        System.out.println("auto.modelo = " + auto.modelo);
-        System.out.println("auto.color = " + auto.color);
-        System.out.println("auto.cilindraje = " + auto.cilindraje);
 
         System.out.println();
 
-        // imprinir atributos mazda
-        System.out.println("mazda.fabricante = " + mazda.fabricante);
-        System.out.println("mazda.modelo = " + mazda.modelo);
-        System.out.println("mazda.color = " + mazda.color);
-        System.out.println("mazda.cilindraje = " + mazda.cilindraje);
+        // invocar a los metodos de la clase Automovil
+        System.out.println(subaru.detalle());
+        System.out.println();
+        System.out.println(mazda.detalle());
+
+
 
 
 
