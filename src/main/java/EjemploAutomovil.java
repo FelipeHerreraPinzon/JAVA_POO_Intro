@@ -20,9 +20,15 @@ public class EjemploAutomovil {
         System.out.println();
 
         // invocar a los metodos de la clase Automovil
-        System.out.println(subaru.detalle());
+        System.out.println(subaru.verDetalle());
         System.out.println();
-        System.out.println(mazda.detalle());
+        System.out.println(mazda.verDetalle());
+        System.out.println();
+        System.out.println("acelerar y frenar el subaru");
+        System.out.println(subaru.acelerar(3000));
+        System.out.println(subaru.frenar());
+        System.out.println();
+        System.out.println(mazda.acelerarFrenar(4000));
 
 
 
