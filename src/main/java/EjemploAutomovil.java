@@ -1,16 +1,17 @@
 public class EjemploAutomovil {
     public static void main(String[] args) {
 
-        Automovil subaru = new Automovil();
+        // el metodo constructor solamente se puede invocar con new
+        Automovil subaru = new Automovil("Subaru", "1999", "Rojo", 2.0 , 150);
 
         // definiendo atributos de auto subaru
-        subaru.asignarFabricante("Subaru");
-        subaru.asignarModelo("1999");
-        subaru.asignarCilindraje(2.0);
-        subaru.asignarColor("Rojo");
+        // subaru.asignarFabricante();
+       //   subaru.asignarModelo();
+       //  subaru.asignarCilindraje();
+       //  subaru.asignarColor();
 
         // instanciando objeto mazda
-      //  Automovil mazda = new Automovil();
+       //  Automovil mazda = new Automovil();
        // mazda.fabricante = "Mazda";
        // mazda.modelo = "1995";
        // mazda.color = "Azul";

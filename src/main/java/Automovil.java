@@ -6,7 +6,19 @@ class Automovil {
     private double cilindraje;
     private int capacidadTanque = 40;
 
-    /// metodos para obtener atributos de la clase
+    // constructor de la clase, similar al metodo set
+    public Automovil(String fabricante, String modelo, String color, Double cilindraje, Integer capacidadTanque){
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+        this.color = color;
+        this.cilindraje = cilindraje;
+        this.capacidadTanque = capacidadTanque;
+
+    }
+
+
+
+    /// metodos para obtener atributos de la clase get y set
     public String leerFabricante(){
         return this.fabricante;
     }
