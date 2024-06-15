@@ -30,8 +30,12 @@ public class EjemploAutomovil {
         System.out.println();
         System.out.println(mazda.acelerarFrenar(4000));
 
+        //  sobrecarga de metodos
+        //  mismo método con diferente tipo o cantidad de argumentos
+        System.out.println("Kilometros por litro: " + subaru.calcularConsumo(300, 0.6f));
 
-
+        //  con porcentaje
+        System.out.println("Kilometros por litro: " + subaru.calcularConsumo(300, 60));
 
 
     }
