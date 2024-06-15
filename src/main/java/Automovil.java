@@ -1,10 +1,48 @@
 class Automovil {
 
-    String fabricante;
-    String modelo;
-    String color = "gris";
-    double cilindraje;
-    int capacidadTanque = 40;
+    private String fabricante;
+    private String modelo;
+    private String color = "gris";
+    private double cilindraje;
+    private int capacidadTanque = 40;
+
+    /// metodos para obtener atributos de la clase
+    public String leerFabricante(){
+        return this.fabricante;
+    }
+    public String leerModelo(){
+        return this.modelo;
+    }
+    public String leerColor(){
+        return this.color;
+    }
+    public Double leerCilindraje(){
+        return this.cilindraje;
+    }
+    public Integer leerCapacidadTanque(){
+        return this.capacidadTanque;
+    }
+
+    // metodos para actualiizar / asignar atributos
+
+    public void asignarFabricante(String fabricante){
+        this.fabricante = fabricante;
+    }
+
+    public void asignarModelo(String modelo){
+        this.modelo = modelo;
+    }
+    public void asignarColor(String color){
+        this.color = color;
+    }
+
+    public void asignarCilindraje(Double cilindraje){
+        this.cilindraje = cilindraje;
+    }
+
+    public void asignarCapacidadTanque(Integer capacidadTanque){
+        this.capacidadTanque = capacidadTanque;
+    }
 
 /*
     public void detalle(){
