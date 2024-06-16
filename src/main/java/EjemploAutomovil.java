@@ -3,6 +3,12 @@ public class EjemploAutomovil {
 
         // el metodo constructor solamente se puede invocar con new
         Automovil subaru = new Automovil("Subaru", "1999", "Rojo", 2.0 , 150);
+        Automovil subaru2 = new Automovil("Subaru", "1999", "Rojo", 2.0 , 150);
+
+
+        // false en ambos,
+        System.out.println("son iguales " + (subaru == subaru2));
+        System.out.println("son iguales con equals " + (subaru.equals(subaru2)));
 
         // definiendo atributos de auto subaru
         // subaru.asignarFabricante();

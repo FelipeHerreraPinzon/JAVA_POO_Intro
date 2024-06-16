@@ -117,5 +117,10 @@ class Automovil {
         return km / (capacidadTanque * (porcentajeBencina / 100f));
     }
 
-
+    // sobreescribir
+    @Override
+    public boolean equals(Object obj) {
+        Automovil auto = (Automovil) obj;
+        return (this.fabricante.equals(auto.leerFabricante()) && this.modelo.equals(auto.leerModelo()));
+    }
 }
