@@ -121,6 +121,8 @@ class Automovil {
     @Override
     public boolean equals(Object obj) {
         Automovil auto = (Automovil) obj;
-        return (this.fabricante.equals(auto.leerFabricante()) && this.modelo.equals(auto.leerModelo()));
+        return (this.fabricante != null && this.modelo != null
+                && this.fabricante.equals(auto.leerFabricante())
+                && this.modelo.equals(auto.leerModelo()));
     }
 }
